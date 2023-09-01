@@ -1,5 +1,4 @@
 # Ignore build
-cmake_build_debug/**
 
 # Ignore object files
 *.o
