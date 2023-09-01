@@ -1,0 +1,4 @@
+/opt/jetbrains/clion-2023.1.4/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/opt/jetbrains/clion-2023.1.4/bin/ninja/linux/x64/ninja -G Ninja -S /home/tdial/Development/akaiutil -B /home/tdial/Development/akaiutil/cmake-build-debug
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/tdial/Development/akaiutil/cmake-build-debug
