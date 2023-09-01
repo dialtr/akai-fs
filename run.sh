@@ -1,6 +1,7 @@
 #!/bin/bash
 
 ISO_PATH="./iso/akai-sample-cd.iso"
+
 BIN_PATH="./cmake-build-debug/akaiutil"
 
 # A simple smoke test to ensure that akaiutil is still working after refactors.
@@ -18,13 +19,15 @@ fi
 
 # Run akaiutil, specifying the disc to open.
 # TODO(tdial): Enhance akaiutil to run smoke tests and exit with 0 or 1
-"${BIN_PATH}" -f "${ISO_PATH}"
+echo -e "quit\n" | "${BIN_PATH}" -f "${ISO_PATH}"
 
 # Did we exit with zero status?
-EXIT_CODE="$?"
-if [ "${EXIT_CODE}" -ne "0" ]; then
-	echo "run.sh: test failed"
-else
-	echo "run.sh: test passed"
-fi
+# TODO(tdial): Zero status really means nothing. Should work on task to
+# make the check meaningful (outlined in TASKS.md)
+#EXIT_CODE="$?"
+#if [ "${EXIT_CODE}" -ne "0" ]; then
+#	echo "run.sh: test failed"
+#else
+#	echo "run.sh: test passed"
+#fi
 

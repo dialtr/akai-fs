@@ -6,6 +6,10 @@
   be to have a bootstrap script that would fetch an iso from some site that
   hosts it so that it could remain outside the repo. (It's a 500mb file!)
 
+* Pipe the output from run.sh to a file and then grep to see if it reported
+  format errors when reading the iso. That is the only way to tell if the
+  utility is working properly.
+
 ## Done
 
 * Write new README.md
