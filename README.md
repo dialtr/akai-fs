@@ -2,17 +2,18 @@
 
 ## About
 
-The **akai-fs** project aims to provide a FUSE filesystem for Akai sampler
-disk formats. It builds upon an existing open source utility called
-**akaiutils** originally written by Michael Indlekofer.
+The **akai-fs** project aims to provide a FUSE filesystem to allow users to
+mount disks using proprietary Akai sampler formats. It builds upon an
+existing open source utility called **akaiutils** originally written by
+Michael Indlekofer.
 
 The original **akaiutils** program is written in C and was intended as an
 interactive, command-line program. Since **akai-fs** will be a FUSE daemon
 and will be written in (mostly) modern C++, some significant refactoring of
 the code will take place. The original snapshot of **akaiutils** is
-provided in the *archive/* director for reference, and I will make an
-attempt to document the link between the new implementation and the
-original where applicable.
+provided in the *archive/* directory for reference, and I will make an attempt
+to document the link between the new implementation and the original work
+where practical.
 
 ## Project Structure
 
@@ -30,6 +31,11 @@ supported platforms will follow when the project is further long.
 
 The **akai-fs** prokect is currently in ALPHA.
 
-## Context
+## Acknowlegements
+
+As mentioned above, **akai-fs** stands on the shoulders of some incredible
+reverse engineering work by Michael Indlekofer, the author of **akaiutils**.
+
+## Contacts
 Tom Dial <thomas.r.dial@gmail.com>
 
