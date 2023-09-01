@@ -4,5 +4,5 @@
 
 ## Done
 
-[X] Write new README.md
-[X] Get original code building under CMake.
+* Write new README.md
+* Get original code building under CMake.
