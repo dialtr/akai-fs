@@ -6926,4 +6926,3 @@ int check_curnopart(void) {
   return 0;
 }
 
-/* EOF */
