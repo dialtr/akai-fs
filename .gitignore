@@ -1,6 +1,7 @@
 # Ignore build directories
 cmake-build-debug/
 cmake-build-release/
+iso/akai-sample-cd.iso
 
 # Ignore object files
 *.o
