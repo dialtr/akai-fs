@@ -1,6 +1,8 @@
 # Tasks
 
 ## Pending
+* Create FUSE skeleton.
+
 * Identify globals and also statics. Anything that that could store global
   state that would prevent the functions from being threadsafe. These will
   have to be addressed.
