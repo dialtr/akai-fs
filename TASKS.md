@@ -20,3 +20,4 @@
 
 * Write new README.md
 * Get original code building under CMake.
+* Restructure akaituil so that its source files are in their own directories.
