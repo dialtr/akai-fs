@@ -21,14 +21,12 @@
 /* akaiutil: access to AKAI S900/S1000/S3000 filesystems */
 
 
-
-#include "commoninclude.h"
-#include "akaiutil_io.h"
-#include "akaiutil.h"
-#include "akaiutil_tar.h"
-#include "akaiutil_file.h"
-#include "akaiutil_take.h"
-
+#include "akaiutil/commoninclude.h"
+#include "akaiutil/akaiutil_io.h"
+#include "akaiutil/akaiutil.h"
+#include "akaiutil/akaiutil_tar.h"
+#include "akaiutil/akaiutil_file.h"
+#include "akaiutil/akaiutil_take.h"
 
 
 /* console user interface */
@@ -706,17 +704,17 @@ main_restart: /* restart with opened disks */
 			{CMD_TRENI,"tmvi",3,3,NULL,NULL},
 			{CMD_CLRFILTERTAG,"clrfiltertag",2,2,"{<tag-index>|all}","remove tag from file filter"},
 			{CMD_SETFILTERTAG,"setfiltertag",2,2,"<tag-index>","add tag to file filter"},
-			{CMD_COPY,"copy",3,4,"<src-file-path> <new-file-path> [<new-file-index>]","copy file"},
+			{CMD_COPY,"copy",3,4,"<akaiutil-file-path> <new-file-path> [<new-file-index>]","copy file"},
 			{CMD_COPY,"cp",3,4,NULL,NULL},
-			{CMD_COPYI,"copyi",3,4,"<src-file-index> <new-file-path> [<new-file-index>]","copy file"},
+			{CMD_COPYI,"copyi",3,4,"<akaiutil-file-index> <new-file-path> [<new-file-index>]","copy file"},
 			{CMD_COPYI,"cpi",3,4,NULL,NULL},
-			{CMD_COPYVOL,"copyvol",3,3,"<src-volume-path> <new-volume-path>","copy volume (with all of its files)"},
+			{CMD_COPYVOL,"copyvol",3,3,"<akaiutil-volume-path> <new-volume-path>","copy volume (with all of its files)"},
 			{CMD_COPYVOL,"cpvol",3,3,NULL,NULL},
-			{CMD_COPYVOLI,"copyvoli",3,3,"<src-volume-index> <new-volume-path>","copy volume (with all of its files)"},
+			{CMD_COPYVOLI,"copyvoli",3,3,"<akaiutil-volume-index> <new-volume-path>","copy volume (with all of its files)"},
 			{CMD_COPYVOLI,"cpvoli",3,3,NULL,NULL},
-			{CMD_COPYPART,"copypart",3,3,"<src-partition-path> <dst-partition-path>","copy all volumes of a partition"},
+			{CMD_COPYPART,"copypart",3,3,"<akaiutil-partition-path> <dst-partition-path>","copy all volumes of a partition"},
 			{CMD_COPYPART,"cppart",3,3,NULL,NULL},
-			{CMD_COPYTAGS,"copytags",3,3,"<src-partition-path> <dst-partition-path>","copy all tags of a partition"},
+			{CMD_COPYTAGS,"copytags",3,3,"<akaiutil-partition-path> <dst-partition-path>","copy all tags of a partition"},
 			{CMD_COPYTAGS,"cptags",3,3,NULL,NULL},
 			{CMD_WIPEVOL,"wipevol",2,2,"<volume-path>","delete all files in volume"},
 			{CMD_WIPEVOL,"wipedir",2,2,NULL,NULL},

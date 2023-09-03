@@ -17,15 +17,12 @@
 * along with this program; if not, write to the Free Software
 * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 */
-
-
-
-#include "commoninclude.h"
-#include "akaiutil_io.h"
-#include "akaiutil.h"
-#include "akaiutil_file.h"
-#include "akaiutil_take.h"
-#include "akaiutil_tar.h"
+#include "akaiutil/commoninclude.h"
+#include "akaiutil/akaiutil_io.h"
+#include "akaiutil/akaiutil.h"
+#include "akaiutil/akaiutil_file.h"
+#include "akaiutil/akaiutil_take.h"
+#include "akaiutil/akaiutil_tar.h"
 
 
 

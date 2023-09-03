@@ -22,8 +22,8 @@
 
 
 
-#include "commoninclude.h"
-#include "akaiutil.h"
+#include "akaiutil/commoninclude.h"
+#include "akaiutil/akaiutil.h"
 
 
 

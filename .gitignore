@@ -7,5 +7,5 @@ iso/akai-sample-cd.iso
 *.o
 
 # Ignore build target
-akaiutil
+#akaiutil
 
