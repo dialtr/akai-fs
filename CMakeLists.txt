@@ -33,6 +33,12 @@ if (UNIX)
     target_link_libraries(akaiutil m)
 endif()
 
+add_executable(
+        akaifs
+        akaifs/main.cc akaifs/fuse_operations.h akaifs/fuse_operations.cc)
+
+target_include_directories(akaifs PRIVATE include)
+target_link_libraries(akaifs fuse3)
 # From original makefile
 # ifdef FILE_OFFSET_BITS_64
 # CFLAGS	+=	-D_FILE_OFFSET_BITS=64
