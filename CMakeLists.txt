@@ -6,21 +6,21 @@ set(CMAKE_CXX_STANDARD 17)
 
 add_executable(
         akaiutil
-        akaiutil/akaiutil.c
+        akaiutil/akaiutil.cc
         include/akaiutil/akaiutil.h
-        akaiutil/akaiutil_file.c
+        akaiutil/akaiutil_file.cc
         include/akaiutil/akaiutil_file.h
-        akaiutil/akaiutil_io.c
+        akaiutil/akaiutil_io.cc
         include/akaiutil/akaiutil_io.h
-        akaiutil/akaiutil_main.c
-        akaiutil/akaiutil_take.c
+        akaiutil/akaiutil_main.cc
+        akaiutil/akaiutil_take.cc
         include/akaiutil/akaiutil_take.h
-        akaiutil/akaiutil_tar.c
+        akaiutil/akaiutil_tar.cc
         include/akaiutil/akaiutil_tar.h
-        akaiutil/akaiutil_wav.c
+        akaiutil/akaiutil_wav.cc
         include/akaiutil/akaiutil_wav.h
         include/akaiutil/commoninclude.h
-        akaiutil/commonlib.c
+        akaiutil/commonlib.cc
         include/akaiutil/fdrawcmd.h
         include/akaiutil/akaiutil_trace.h)
 
