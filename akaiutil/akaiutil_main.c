@@ -2706,7 +2706,7 @@ int AKAIUTIL_MAIN(int argc, char **argv) {
             PRINTF_ERR("format error\n");
             FLUSH_ALL;
           }
-          if (ret < 0) { /* non-fatal? */
+          if (ret < 0) {
             goto main_parser_next;
           }
           /* must exit (or restart) now!!! */

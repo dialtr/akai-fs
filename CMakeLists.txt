@@ -22,7 +22,7 @@ add_executable(
         include/akaiutil/commoninclude.h
         akaiutil/commonlib.c
         include/akaiutil/fdrawcmd.h
-)
+        include/akaiutil/akaiutil_trace.h)
 
 target_include_directories(akaiutil PRIVATE include)
 
