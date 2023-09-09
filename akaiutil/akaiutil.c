@@ -20,11 +20,11 @@
 
 
 
-#include "commoninclude.h"
-#include "akaiutil_io.h"
-#include "akaiutil.h"
-#include "akaiutil_file.h"
-#include "akaiutil_take.h"
+#include "akaiutil/commoninclude.h"
+#include "akaiutil/akaiutil_io.h"
+#include "akaiutil/akaiutil.h"
+#include "akaiutil/akaiutil_file.h"
+#include "akaiutil/akaiutil_take.h"
 
 /* disks */
 struct disk_s disk[DISK_NUM_MAX]; /* disks, Note: one for each disk, system-wide */

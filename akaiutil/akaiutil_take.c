@@ -17,18 +17,14 @@
 * along with this program; if not, write to the Free Software
 * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 */
+#include "akaiutil/commoninclude.h"
+#include "akaiutil/akaiutil_io.h"
+#include "akaiutil/akaiutil.h"
+#include "akaiutil/akaiutil_take.h"
+#include "akaiutil/akaiutil_wav.h"
 
 
-
-#include "commoninclude.h"
-#include "akaiutil_io.h"
-#include "akaiutil.h"
-#include "akaiutil_take.h"
-#include "akaiutil_wav.h"
-
-
-int
-akai_ddtake_info(struct part_s *pp,u_int ti,int verbose)
+int akai_ddtake_info(struct part_s *pp,u_int ti,int verbose)
 {
 	char namebuf[DIRNAMEBUF_LEN+1]; /* +1 for '\0' */
 	struct akai_ddtake_s *tp;

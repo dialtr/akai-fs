@@ -17,16 +17,10 @@
 * along with this program; if not, write to the Free Software
 * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 */
+#include "akaiutil/commoninclude.h"
+#include "akaiutil/akaiutil_wav.h"
 
-
-
-#include "commoninclude.h"
-#include "akaiutil_wav.h"
-
-
-
-int
-wav_write_head(int outdes,
+int wav_write_head(int outdes,
 			   u_int datasize,u_int chnr,u_int samprate,u_int bitnr,
 			   u_int extrasize)
 {

@@ -21,7 +21,7 @@
 */
 
 
-#include "commoninclude.h"
+#include "akaiutil/commoninclude.h"
 
 
 /* AKAI S900/S1000/S3000 filesystems */

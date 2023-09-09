@@ -20,8 +20,8 @@
 
 
 
-#include "commoninclude.h"
-#include "akaiutil_io.h"
+#include "akaiutil/commoninclude.h"
+#include "akaiutil/akaiutil_io.h"
 
 
 

@@ -46,28 +46,28 @@ back:
 akaiutil:	akaiutil_main.o akaiutil_tar.o akaiutil_file.o akaiutil_take.o akaiutil_wav.o akaiutil.o akaiutil_io.o commonlib.o
 	$(CC) $(CFLAGS) -o $@ akaiutil_main.o akaiutil_tar.o akaiutil_file.o akaiutil_take.o akaiutil_wav.o akaiutil.o akaiutil_io.o commonlib.o -lm
 
-akaiutil_main.o:	../akaiutil_main.c akaiutil.h akaiutil_io.h akaiutil_tar.h akaiutil_file.h akaiutil_take.h commoninclude.h
+akaiutil_main.o:	../akaiutil akaiutil.h akaiutil_io.h akaiutil_tar.h akaiutil_file.h akaiutil_take.h commoninclude.h
 	$(CC) $(CFLAGS) -c akaiutil_main.c
 
-akaiutil_tar.o:	../akaiutil_tar.c akaiutil_tar.h akaiutil_file.h akaiutil_take.h akaiutil.h akaiutil_io.h commoninclude.h
+akaiutil_tar.o:	../akaiutil akaiutil_tar.h akaiutil_file.h akaiutil_take.h akaiutil.h akaiutil_io.h commoninclude.h
 	$(CC) $(CFLAGS) -c akaiutil_tar.c
 
-akaiutil_file.o:	../akaiutil_file.c akaiutil_file.h akaiutil_wav.h akaiutil.h commoninclude.h
+akaiutil_file.o:	../akaiutil akaiutil_file.h akaiutil_wav.h akaiutil.h commoninclude.h
 	$(CC) $(CFLAGS) -c akaiutil_file.c
 
-akaiutil_take.o:	../akaiutil_take.c akaiutil_take.h akaiutil_wav.h akaiutil.h akaiutil_io.h commoninclude.h
+akaiutil_take.o:	../akaiutil akaiutil_take.h akaiutil_wav.h akaiutil.h akaiutil_io.h commoninclude.h
 	$(CC) $(CFLAGS) -c akaiutil_take.c
 
-akaiutil_wav.o:	../akaiutil_wav.c akaiutil_wav.h commoninclude.h
+akaiutil_wav.o:	../akaiutil akaiutil_wav.h commoninclude.h
 	$(CC) $(CFLAGS) -c akaiutil_wav.c
 
-akaiutil.o:	../akaiutil.c akaiutil.h akaiutil_io.h akaiutil_file.h commoninclude.h
+akaiutil.o:	../akaiutil akaiutil.h akaiutil_io.h akaiutil_file.h commoninclude.h
 	$(CC) $(CFLAGS) -c akaiutil.c
 
-akaiutil_io.o:	../akaiutil_io.c akaiutil_io.h commoninclude.h
+akaiutil_io.o:	../akaiutil akaiutil_io.h commoninclude.h
 	$(CC) $(CFLAGS) -c akaiutil_io.c
 
-commonlib.o:	../commonlib.c commoninclude.h
+commonlib.o:	../akaiutil commoninclude.h
 	$(CC) $(CFLAGS) -c commonlib.c
 
 
