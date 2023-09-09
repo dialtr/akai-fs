@@ -613,11 +613,11 @@ int AKAIUTIL_MAIN(int argc, char **argv) {
 
     struct cmdtab_s {
       enum cmd_e cmdnr;
-      char *cmdstr;
+      const char *cmdstr;
       int cmdtokmin;
       int cmdtokmax;
-      char *cmduse;
-      char *cmdhelp;
+      const char *cmduse;
+      const char *cmdhelp;
     } cmdtab[] = {
         {CMD_HELP, "help", 1, 2, "[<cmd>]", "print help information for a command"},
         {CMD_HELP, "man", 1, 2, NULL, NULL},

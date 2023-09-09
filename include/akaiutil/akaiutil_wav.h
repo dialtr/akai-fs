@@ -83,7 +83,7 @@ extern int wav_write_head(int outdes,
 extern int wav_read_head(int indes,u_int *bcountp,
 						 u_int *datasizep,u_int *chnrp,u_int *sampratep,u_int *bitnrp,
 						 u_int *extrasizep,
-						 char **errstrp);
+						 const char **errstrp);
 
 #ifndef WAV_AKAIHEAD_DISABLE
 #define WAV_AKAIHEADTYPE_NONE			0x00

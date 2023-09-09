@@ -611,7 +611,7 @@ int akai_cuelist_info(struct file_s *fp) {
   struct akai_cue_s *cuep;
   u_char *buf;
   u_int cuenum;
-  char *tname;
+  const char *tname;
   u_int i;
 
   if ((fp == NULL) || (fp->volp == NULL) || (fp->index >= fp->volp->fimax)) {
@@ -2250,9 +2250,9 @@ int akai_wav2sample(int wavfd, char *wavname, struct vol_s *volp, u_int findex,
   static u_char *wavbuf16;
   static u_int wavbuf16size;
   static u_char *wavbuf;
-  static char *errstrp;
+  static const char *errstrp;
   static u_int nlen, nlenmax;
-  static char *tname;
+  static const char *tname;
   static char fname[AKAI_NAME_LEN + 4 + 1]; /* name (ASCII), +4 for ".<type>", +1 for '\0' */
   static char sname[AKAI_NAME_LEN + 1]; /* +1 for '\0' */
   static int r;

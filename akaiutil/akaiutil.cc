@@ -1802,7 +1802,7 @@ u_char ascii2akai900(char a) {
   return c;
 }
 
-void ascii2akai_name(char *name, u_char *aname, int s900flag) {
+void ascii2akai_name(const char *name, u_char *aname, int s900flag) {
   int i;
   u_char blank;
   int len;
@@ -1833,7 +1833,7 @@ void ascii2akai_name(char *name, u_char *aname, int s900flag) {
   }
 }
 
-u_char ascii2akai_filename(char *name, u_char *aname, u_int *osverp, int s900flag) {
+u_char ascii2akai_filename(const char *name, u_char *aname, u_int *osverp, int s900flag) {
   char *tn;
   u_int tl;
   u_int i, l;
@@ -3851,7 +3851,7 @@ void akai_list_part(struct part_s *pp, int recflag, u_char *filtertagp) {
 }
 
 /* find partition with given name (letter) */
-struct part_s *akai_find_part(struct disk_s *dp, char *name) {
+struct part_s *akai_find_part(struct disk_s *dp, const char *name) {
   u_int p;
   char namebuf[16]; /* XXX */
 
@@ -6233,7 +6233,7 @@ int akai_wipe_floppy(struct disk_s *dp, int lodensflag, int s3000flag, int s900f
 }
 
 /* XXX no check for recursion overflow */
-int change_curdir(char *name, u_int vi, char *lastname, int checklast) {
+int change_curdir(const char *name, u_int vi, char *lastname, int checklast) {
   /* Note: variables below must be auto, for recursion!!! */
   char namebuf[DIRNAMEBUF_LEN + 1]; /* +1 for '\0' */
   u_int l;

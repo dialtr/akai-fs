@@ -610,8 +610,8 @@ void akai2ascii_name(u_char *aname, char *name, int s900flag);
 void akai2ascii_filename(u_char *aname, u_char ft, u_int osver, char *name, int s900flag);
 u_char ascii2akai(char a);
 u_char ascii2akai900(char a);
-void ascii2akai_name(char *name, u_char *aname, int s900flag);
-u_char ascii2akai_filename(char *name, u_char *aname, u_int *osverp, int s900flag);
+void ascii2akai_name(const char *name, u_char *aname, int s900flag);
+u_char ascii2akai_filename(const char *name, u_char *aname, u_int *osverp, int s900flag);
 
 void akai_vol_info(struct vol_s *vp, u_int ai, int verbose);
 void akai_list_vol(struct vol_s *vp, u_char *filtertagp);
@@ -646,7 +646,7 @@ int akai_set_cdinfo(struct part_s *pp, char *cdlabel);
 
 void akai_part_info(struct part_s *pp, int verbose);
 void akai_list_part(struct part_s *pp, int recflag, u_char *filtertagp);
-struct part_s *akai_find_part(struct disk_s *dp, char *name);
+struct part_s *akai_find_part(struct disk_s *dp, const char *name);
 void print_fat(struct part_s *pp);
 
 void akai_disk_info(struct disk_s *dp, int verbose);
@@ -689,7 +689,7 @@ int akai_wipe_harddisk(struct disk_s *dp, u_int bsize, u_int totb, int s3000flag
 int akai_wipe_harddisk9(struct disk_s *dp, u_int totb);
 int akai_wipe_floppy(struct disk_s *dp, int lodensflag, int s3000flag, int s900flag);
 
-int change_curdir(char *name, u_int vi, char *lastname, int checklast);
+int change_curdir(const char *name, u_int vi, char *lastname, int checklast);
 int change_curdir_home(void);
 void save_curdir(int modflag);
 void restore_curdir(void);

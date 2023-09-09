@@ -576,6 +576,7 @@ int
 akai_wav2take(int wavfd,char *wavname,struct part_s *pp,u_int ti,u_int *bcountp,int what)
 {
 	/* Note: static for multiple calls with different what */
+    // TODO(tdial): static variables not threadsafe. remove.
 	static struct akai_ddtake_s t;
 	static u_int samplerate;
 	static u_int samplesize;
@@ -585,7 +586,7 @@ akai_wav2take(int wavfd,char *wavname,struct part_s *pp,u_int ti,u_int *bcountp,
 	static u_int wavsamplesizealloc;
 	static u_int wavsamplecount;
 	static u_char *wavbuf;
-	static char *errstrp;
+	static const char *errstrp;
 	static u_int nlen;
 	static char name[AKAI_NAME_LEN+1]; /* name (ASCII), +1 for '\0' */
 	static u_int cstarts,cstarte;
